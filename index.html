@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="form-image">
+                <img src="assets/img/undraw_calculator_re_alsc.svg" alt="homem calculando">
+            </div>
+            <div class="form">
+                <div class="title">
+                    <h2>B maior que A?</h2>
+                </div>
+                <form id="form-numeros">
+                    <div class="form-header">
+                        <div class="input-group">
+                            <div class="input-box">
+                                <label for="campoA">Campo A</label>
+                                <input type="number" id="campoA" placeholder="Número 1" required>
+                                
+                                <label for="campoB">Campo B</label>
+                                <input type="number" id="campoB" placeholder="Número 2" required>
+
+                                <div class="enter-button">
+                                    <button type="submit" onclick="comparacao(event)">Enviar</button>
+                                    <p id="resultado"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>
